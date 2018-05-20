@@ -1,0 +1,641 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 TrebuchetMS;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Verdana;
+\f3\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red164\green164\blue164;\red222\green222\blue222;\red188\green188\blue188;
+\red203\green203\blue203;\red213\green213\blue213;\red244\green191\blue0;}
+\vieww13980\viewh15740\viewkind0
+{\*\background {\shp{\*\shpinst\shpleft0\shptop0\shpright0\shpbottom0\shpfhdr0\shpbxmargin\shpbymargin\shpwr0\shpwrk0\shpfblwtxt1\shpz0\shplid1025{\sp{\sn shapeType}{\sv 1}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn fillColor}{\sv 3281920}}{\sp{\sn fFilled}{\sv 1}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn bWMode}{\sv 9}}{\sp{\sn fBackground}{\sv 1}}}}}
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs26 \cf1 | UPDATE OCT.26.2014: The peaBrain engine that powers pChess is now \
+| available on the iPad!! CHESS MEISTER for the iPad is ready for Christmas 2014. \
+| \
+| Check out: CHESS MEISTER for the iPad: \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 | https://itunes.apple.com/us/app/chess-meister/id928343910?ls=1&mt=8\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf1 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 {{\NeXTGraphic Pasted Graphic 1.tiff \width1280 \height1280
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf0   
+\fs48 \cf1 pChess 2.0
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \
+By John Roland Penner <chesschessmeister-at-gmail-dot-com>\
+Released: October 30, 2014 (Toronto Island, Canada)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf2 http://johnrolandpenner.com/index-chess.html
+\fs28 \cf1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 {{\NeXTGraphic pChess 2.0sm.png \width12900 \height8020
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf1 Overview
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 pChess is a free chess application for Mac OS X with nice graphics. \
+It supports Fischer Random Chess, copy/paste of FEN, SAN Notation, \
+PGN Load/Save, and unlimited Undo/Redo.\
+\
+Cool Audio and Visual Brain features let you listen and see as it evaluates moves. \
+The opening book includes over 10,000 moves from the ECO (Encyclopedia of \
+Chess Openings). Runs at about 1600 ELO at depth 7. Comes complete with \
+FutureBasic 5 source code*. \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf1 pChess can be played as a stand-alone OS X application, or installed as \
+a UCI engine within a Chess GUI. Because it comes with the source code,\
+it also provides a simple engine to get you started in chess programming. \
+\
+Included are all the necessary FutureBasic source files needed to compile \
+your own. These provide a simple implementation of the three main parts \
+of a chess programme:  i) a move generator, ii) position evaluation, and \
+iii) a fully recursive search engine using Claude Shannon's minimax algorithm. 
+\f0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf1 \
+* Download FutureBasic for OSX here: http://4toc.com/fb/index.htm\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf1 Features
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \
+- Provides a basic NegaMax Recursive Engine with Alpha-Beta pruning, \
+  Move Ordering, Quiescence Search, Iterative Deepening, and a Hash Table. \
+- Playing strength is roughly 1600 ELO (USCF class D player) at Depth 7. \
+- The move generator runs at a modest rate of 70,000 nodes/second. \
+- Evals: Pawn Tropism; Doubled; Passed Pawns; Dynamic King Tropism, \
+  Knight Tropism, Doubled Bishops Bonus. \
+- Audio Brain \'97 allows you to hear the moves as they're being played. \
+- Visual Brain \'97 allows you to see the searches as they're progressing. \
+- Plays both Classic and Fischer Random games. \
+- Provides an ECO-based Opening Book with over 10,000 openings. \
+- Standard Algebraic Notation (SAN) Supported, use . in front of move. \
+- FEN copy/paste allows you to save and eMail game positions.\
+- Save and Load games in standard .PGN format (single game per file). \
+- Legal move generation, including: Pawn-Queen Promotion, \
+  enPassant, Castling (disallowing Castling out of, and through check). \
+- Interrupt Search with 
+\i ESC
+\i0  key, or set with 
+\i time
+\i0  command. \
+- Use < and > buttons to move through game history; click \'95 to set. \
+- Simple Board Editing with console Entry. \
+- Speech allows use without looking at the screen. 
+\f2 \
+\pard\pardeftab720\partightenfactor0
+\cf1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf1 Requirements
+\fs28 \
+- Any Macintosh with an Intel or PowerPC Processor\
+- Supports Mac OSX 10.5 - 10.9 as a 32bit application. \
+\
+
+\fs36 Installation
+\fs28 \
+- Download from: http://home.earthlink.net/~johnrpenner/index-chess.html\
+- Open the pChess.zip file > copy to your Applications folder. Double-click to run. \
+\
+
+\fs36 Updates
+\fs28 \
+To keep up to date, check Storm's Nest homepage: \
+http://home.earthlink.net/~johnrpenner/index-chess.html\
+\
+
+\fs36 License
+\fs28 \
+pChess is Copyright \'a92014 by John Roland Penner, and licensed to you under the GNU GPL.\
+You are free to download, compile, enhance, use, and redistribute for free. \
+You must also make freely available this whole package to anyone else who wants it. \
+If you charge anything for redistribution, send me a cut (you decide how valuable it was). \
+It would be cool if you would email me to notify me what you've done. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs26 \cf1 _________________________________________________________
+\fs28 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf1 New in pChess 2.0
+\fs28 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf1 \
+\'95 Speed Optimization: 30% FASTER than pChess 1.9.2. \
+\'95 PGN File Support: You can now load and save standard (single game) .pgn files.\
+\'95 Fischer Castling: Castle in a Fischer game by capturing your Rook with your King. \
+\'95 UCI Engine now supports the 'UCI_Chess960' option, and plays Fischer games. \
+\'95 Fixed a bug: peaBrain was not responding to 
+\i isready
+\i0  after a 
+\i position
+\i0  command, \
+	causing the engine to stall in cutechess. \
+\'95 Fixed a bug: peaBrain was not sending a promotion string: =Q, causing some UCI \
+	interfaces to not register a queen promotion, when in fact there was one. \
+\'95 Cleaned up ECO Opening Book Names\
+\'95 Fancy schmancy new icon. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf1 Future Direction
+\fs28 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs26 \cf1 _________________________________________________________\
+\
+NEWS RELEASE from pCHESS development team | October 24, 2012\
+_________________________________________________________\
+\
+pChess has been a two year labour of love, and a culmination of what I wanted to \
+achieve \'97 a good working engine that could play a solid game of chess. \
+\
+With version 2.0, I've worked to knock out most of the bugs, and give a worthy wrap\
+to pChess development \'97 pChess 2.0 is faster, has new features, kills bugs, and has\
+been tested to work on the latest OSX 10.9 \'97 However, the pChess interface uses \
+obsolete Carbon APIs, and the venerable FutureBasic has no ability to move to \
+a 64 bit Cocoa Interface. \
+\
+Therefore, after much and long deliberation, it has become clear that putting any \
+further effort into pChess after 2.0 would be putting effort into a dying world \'97 \
+Therefore, I have decided to direct my efforts towards writing a totally new Chess \
+App for the iOS \'97 the CHESS MEISTER  \'97 has been in development since March 2012. \
+\
+I have ported the peaBrain chess engine that powers pChess, and written a beautiful \
+graphical interface for iOS. Chess Meister delivers gorgeous Retina iPad Graphics, \
+and support for the iPad Air. \
+\
+\'95 
+\fs28 pChess
+\fs26  \cf4 is an open source chess application for Mac OS X\cf1 . \
+\'95 
+\fs28 Chess Meister
+\fs26  \cf5 is an App for iOS \'97 available Christmas 2014\cf1 . \
+\'95 
+\fs28 peaBrain
+\fs26  \cf6 is the UCI engine that powers both pChess and Chess Meister\cf1 . \
+\
+This is the future. The pChess team is dedicated to bringing the power of the peaBrain \
+to iOS, and making CHESS MEISTER the most beautiful chess app available in the App Store. \
+\
+\
+| UPDATE OCT.26.2014: The peaBrain engine that powers pChess is now \
+| available on the iPad!! CHESS MEISTER for the iPad is ready for Christmas 2014. \
+| \
+| Check it out: CHESS MEISTER for the iPad: \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 | https://itunes.apple.com/us/app/chess-meister/id928343910?ls=1&mt=8\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 {{\NeXTGraphic iPad Mini.png \width12900 \height6980
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \'97\'97| pChess Version History |\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf1 \
+> New in pChess 2.0\
+\'95 Fancy schmancy new icon & Morpho butterfly board graphics to match \
+	the upcoming Chess Meister for iPad \'97 due for release Christmas 2012. \
+\'95 Speed Optimization: disabled compiler bounds checking = 30% faster!! \
+\'95 PGN File Support. You can now load and save standard (single game) .pgn files.\
+\'95 Loaded games now show PGN info in the window title, and display the 
+\i last
+\i0  move.\
+	Edit info by typing: white 
+\i playerName
+\i0 , site 
+\i whereItWas
+\i0 ; date 
+\i 2012.02.25
+\i0 , etc. \
+\'95 Fischer Castling Support in the move generator, and in FEN import/export. :)\
+	You castle in a Fischer game by capturing your own rook with your king. \
+\'95 Fischer games now display the destination kingSq in the axis labels (C and G). \
+\'95 Added the ability to drag and drop .pgn files onto pChess to open them. \
+\'95 UCI Engine now supports the 'UCI_Chess960' option, and plays UCI Fischer games. \
+\'95 UCI Engine no longer creates a .logfile, unless you enable the compiler option. \
+\'95 Fixed a bug: peaBrain was not responding to 
+\i isready
+\i0  after a 
+\i position
+\i0  command, \
+	causing the engine to stall in cutechess-cli. \
+\'95 Fixed a bug: peaBrain was not sending a promotion string: =Q,  \
+	causing some UCI interfaces to not register a queen promotion, \
+	when in fact there was one. \
+\'95 Cleaned up ECO Opening Book Names to match Chess Meister 0.7.0. \
+\'95 Cleaned up this ReadMe file; added info about Chess Meister. \
+\
+\
+> New in 1.9.2 (UCI Edition with Time Control)\
+- Added Ghosted (i.e. uncaptured) pieces to the captured pieces display. \
+- Fixed a bug which caused peaBrain UCI to crash after 99 moves (now max = 512). \
+- Better UCI Info: Hash Percent and Move Score are now scaled more reasonably, \
+	and Nodes Per Second is now sent to the GUI. \
+- Added UCI Time Controls: Supported commands are: wtmime, btime, movestogo, \
+	movetime, depth, and infinite. \
+- Smaller Memory: Hash Table has been reduced from 256Mb down to 64Mb. This \
+	substantially reduces memory usage (from 280Mb > 80Mb) without incurring\
+	significant loss in speed. \
+- UCI Opening Book: Include pBook.txt in the engine folder, and enable\
+	UCI option Book = true to enable book openings for the engine. \
+\
+> New in 1.9 (UCI Edition)\
+- A bug which caused asymmetric pawn evaluations has been fixed (version 1.8.1). \
+- Added a wholly new module \'97 pChess.command \'97 copy it into the 'Engines' \
+	folder of Sigma Chess or Stockfish, and you can play pChess as a UCI engine!! \
+\
+New in 1.8 (Heavenly Hash Edition)\
+- Added Hash Tables and Iterative Deepening. This should speed searches significantly.\
+- The Opening Book is now bundled and auto-loaded at startup. \
+- Captured pieces are now displayed in the info area. \
+- The evaluation is now more subtle, with many improved evaluation features: \
+- Adjusted the default weights of the knight and bishop, such that the following \
+    conditions will occur: i)   B > N > 3P;  ii)  B + N = R + 1.5P;  iii) Q + P = 2R. \
+    Thus, _bishopWt = 330; _knightWt = 320, as per: Tomasz Michniewski (ChessWiki)\
+- Improved the pawn tropism, added knight tropism, and a bonus for a bishop pair. \
+- It would previously castle into open (bad!) positions. Now it should only castle \
+    into a position behind a protecting pawn. \
+- Positional scores have been normalized so as not to exceed material scores. \
+  This should help prevent bad trades. \
+- A bug in quiescenceSearch() which was lowering recapture scores was fixed. \
+- You can now load and save FEN with enPassant information. \
+- Clicking a square now shows only legal moves for the piece. \
+  Previously, it would show all moves for a piece whether they were legal or not. \
+\
+New in 1.7 (Bookworm edition)\
+- Previously, the opening book had 737 moves in algebraic notation. \
+  The Opening Book routines have been upgraded to provide SAN input, and the book itself\
+  now reads in over 10,000 opening lines from the ECO (Encyclopedia of Chess Openings). \
+  Thanks go to Christopher Conkie (Scotland) for 'eco-arena-v03.xls', which \
+  provides the source for the ECO Encyclopedia of Chess Openings used in the \
+  opening book. Opening lines have been shortened to not exceed 255 characters. \
+- Updated this ReadMe with edition names. \
+\
+New in 1.6 (Quartz edition)\
+- Quartz has replaced Quickdraw in display.incl; everything is anti-aliased now. :D \
+\
+New in 1.5 (Audionbrain Edition)\
+- New 
+\i AudioBrain
+\i0  feature - hear the computer as it evaluates moves. \
+- Hyperview is now even faster, and works in connection with audiobrain. \
+- The pChess window now refreshes automatically if it was previously hidden. \
+- Clicking an unoccupied square now shows what can move there. \
+\
+New in 1.4 (Blabberbrain edition)\
+- pChess will now speak SAN moves in a more English-like way using FN speakMove(). \
+- Castling notation and SAN disambiguation bugs fixed. \
+\
+New in 1.3 (Widescreen edition)\
+- Widescreen edition - bigger clearer board (512 x 512, window = golden rectangle).\
+\pard\pardeftab720\qj\partightenfactor0
+\cf1 \'b7 Game History to replay moves with unlimited Undo/Redo and scrolling display.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf1 - The debug window is no longer - it has been integrated into an extension\
+	of the main window, such that without, the main window is a square, \
+	and with, the main window is a golden rectangle (512 x 1.618).  \
+\
+> New in 1.2.5 (Snowbrain edition)\
+- Standard Algebraic Notation (SAN) can now be input (prefix moves with\
+	a dot ( . ), for example:  .c5  .Nxf6  .exf4  .Qb6  .Rhe8). \
+- You can now Save and Load games. They are saved in a pseudo .pgn format \
+	(one move per line, due to str255 limitations). \
+\
+> New in 1.2 (Snowfall edition)\
+- Legal move generation (no more castling out of and through check!). \
+- Games now report moves in Standard (SAN) notation instead of Algebraic notation. \
+- The parser has also been updated; you can query a square: ?c3B (will show all\
+	bishop moves of the current colour that can target square c3).\
+- Trimmed input (leading and trailing spaces are removed before parsing). \
+\pard\pardeftab720\qj\partightenfactor0
+\cf1 \'b7 Built-in tournament mode for testing of internal eval paramaters. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf1 \
+> New in 1.1 (Speedbrain Golden Release edition)\
+- About pChess added to the application menu. \
+- Game History now lines up neatly in columns. \
+- Old school ASCII mode (type 'ascii' in the console). \
+- Experimental 'audiobrain' - listen to the engine eval scores. \
+\
+> New in 1.0.8 (Speedbrain edition)\
+- The CHEQ Font is now embedded in the application - no more need to install! :-D \
+  This also means v1.0.8 requires at least OSX 10.5 in order to run. \
+- Added Milliseconds() function - perft results are now returned in thousandths of a second. \
+- Quadruple Speed. Due to a better method of generating Legal moves, searches are\
+  now returned much more quickly. For example, the FEN below required 137 million \
+  moves which were mostly wasted in legality checking - the fn checkTest() is horribly \
+  inefficient. Now they are tested with fn isLegalPosition() to yield the same result with \
+  only 4,511,400 moves.  :-D \
+\
+	FEN: rnb1kbnr/pppp1ppp/8/4p1q1/2P5/6P1/PP1PPP1P/RNBQKBNR w KQkq\
+	v1.0.7: time: 00:06:29; moves: 137,059,677; nodes: 2,151,745; qui: 2,303,257\
+	v1.0.8: time: 00:01:09; moves: 4,511,400;   nodes: 2,149,763; qui: 2,240,554\
+\
+> New in 1.0.7 (Vectorbrain and the Masked Crusader edition)\
+- Major rewrite of the move generator. It now uses a generic vector based \
+  approach with mask boards to replace explicit bounds checking. This reduced \
+  the size from 1245 lines down to 570 lines. It is also 20% faster. \
+- Last version to work in OSX 10.4 Tiger (!!)\
+\
+> New in 1.0.5 (Zero the Hero at the Darkhorse edition)\
+- Rewrite of move generator. Moves are now 0..7 based instead of 1..8 based. \
+  Further, the hairball has been broken up into discrete functions, and the white\
+  and black evaluations have been consolidated by multiplying by -1 (i.e. pieceColour). \
+  This optimization reduced the code from 2362 lines down to 1245 lines (!). \
+- New perft() diagnostic function added. Tells you if the move generator is\
+  generating the correct number of moves for a given level of depth. e.g. perft 5\
+\
+> New in 1.0.4 (peaBrain with sneaky Quiescence and King Tropism edition)\
+- Preferences file; saves Window Position, Depth, and Option menu states. \
+- 
+\i win
+\i0  and 
+\i win reset
+\i0  commands (gives XY loc of window, and resets to default).\
+- Ability to disable and work without the Debug window (the one-eyed pea).  \
+- Fixed a bug with White King Castle move generation. \
+- Rethought the buttons in the UI.  You can now move prev/next and SET. \
+\
+> New in 1.0 (First Release)\
+- Clicking the Close button in the titlebar now Quits the application. \
+- Moving through the history with Prev/Next now displays 'x of y'. \
+- Added a 'Set Now' command to the Options menu. When you move \
+  back and forth through the history with the PREV and NEXT commands, \
+  it causes the move from which the game proceeds = currently displayed move. \
+\
+> New in 0.9.18 (Kling Klang edition)\
+- Plays Check, Mate, and Promotion Sounds. \
+- New feature, provides Hint moves (Options menu). \
+- Fixes responsiveness interrupting moves with ESC. \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \'97\'97| Known Bugs |\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\fs24 \
+\
+pChess may receive bug fixes for a possible maintenance release at some point,\
+however \'97 CHESS MEISTER for iOS is where all our development efforts are now directed. \
+\
++ UCI Engine Support (will allow loading engine into other Chess GUIs).\
++ Support for Iterative Deepening (so it doesn't return bad ESC moves)\
++ Support for Hash Tables (to get more depth and speeed!!)\
++ Full PGN File import/export with support for Fischer (single game). \
++ Fischer Castling support in moveGen, PGN, and FEN. \
++ Cleaned up ECO Opening Book names. \
+- Chess Meister board graphics (Morpho butterfly board) \'97 maybe. \
+- Threefold Repetition detection & fix Hash Tables. \
+- Dialogue to Set Preferences (hiView.sheet from NIB). \
+\
+> Not Likely: \
+- Rewrite as an UCI GUI front-end to support loading of UCI Engines. \
+- A complete rewrite for Cocoa Toolbox Support: \
+	+ Replace QuickDraw with Quartz (CoreGraphics)\
+	- Replace Appearance/Window/Dialog Managers with NIBs\
+	- Replace EventManager with CarbonEvents\
+	- Replace Pascal Strings with CFStrings\
+\
+\
+
+\fs28 \'97\'97| Thanks |\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs26 \cf1 \
+People to Thank include: \
+\
+- Robert Purves, for writing FutureBasic 5, Spandrel Chess, and mentoring support. \
+- John Renner, Adobe Systems, for permission to use CHEQ Font, 1989. **\
+	http://tug.ctan.org/tex-archive/fonts/chess/cheq/\
+- John Penner Sr, and Gregory Steiner for many challenging games of Real Chess.\
+- Rosie Shaw, for Beta Testing and Excellent Companionship, August 2009. \
+- Kinga Burjan, for Beta Testing and Support, 2010. \
+- Brendan Ferguson, for release management, 2010. \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf1 References
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs26 \cf1 \
+- Robert Purves, Spandrel Chess, February 14, 2010. \
+- Claude Shannon, Programming a Computer for Playing Chess, 1949. \
+- Craig S. Bruce and Kevin Phillips, KC Chess, 1990. \
+- Colin Frayn, Computer Chess Programming Theory, August 2005. \
+- Tom Kerrigan, Tom Kerrigans Simple Chess Program (TSCP), 1997. \
+- Ed Schroder, How Rebel Plays Chess, 2004. \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \'97\'97| Help |\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\fs24 \
+\
+
+\fs28 Commands
+\fs24  (use Cmd-M to enter)\
+\
+Click and drag to make a move. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 e2e4\cf1 		Enter a pair of algebraic coordinates to make a move (e.g. e2e4 f5g6)\
+		Enter standard algebraic moves by prefixing with a .\
+		(e.g.  .c5  .Nxf6  .Rhe8 .exf4  .Qb6)\
+\cf7 e2\cf1 		Shows legal moves for a specified square. \
+		If you supply no input, pChess generates a move. \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 Console Commands
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 new\cf1 		Starts a new game. \
+\cf7 fischer\cf1 	Starts a new Fischer game. \
+\cf7 classic\cf1 	Starts a new Classic game. \
+\cf7 flip\cf1 		Rotate the Board 180 degrees\
+\
+\cf7 info	\cf1 	Shows white vs black names for PGN info. \
+\cf7 white 
+\i playerName
+\i0 \cf1 \
+		Sets the PGN info for white to 
+\i playerName
+\i0 . \
+\cf7 black 
+\i playerName
+\i0 \cf1 \
+		Sets the PGN info for black to 
+\i playerName
+\i0 \
+\cf7 event | site | date | round 
+\i string
+\i0 \cf1 \
+		Sets the PGN info for the specified field to specified 
+\i string
+\i0 . \
+\
+\cf7 depth\cf1 	Display the current MiniMax search depth. \
+\cf7 depth n\cf1 	Sets the MiniMax search depth, where n = 1-5. \
+\cf7 tree\cf1 		Display legal moves and mobility for current colour. \
+\
+\cf7 time\cf1 		Displays the maximum search time (default 2 minutes). \
+\cf7 time n\cf1 	Sets the maximum search time in seconds. \
+		Too short = bad searches; 0=No Time Limit; ESC key Cancels. \
+\
+\cf7 book\cf1 		Shows how many openings are currently loaded. \
+\cf7 book load\cf1 \
+		Loads an opening Book (uses coordinate algebraic notation). \
+\cf7 book on/off\cf1 \
+		Enables / Disables the opening book. \
+\cf7 audiobrain\cf1 \
+		Toggles the audiobrain on/off (hear moveScore values).\
+\cf7 visualbrain on/off\cf1 \
+		Enables / Disables the visual brain. \
+\cf7 hyperview on/off\cf1 \
+		Enables / Disables HyperView (only for depth < 3). \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 Board Editing 
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 fen\cf1 		Generates a FEN string from the currently displayed board. \
+\cf7 fen 1nR1B3/4P2k/6pp/p3p3/P3p1K1/2P2qP1/1r5r/8 w - \cf1 \
+		Setup the board according to the supplied FEN string. \
+\cf7 >e1g7\cf1  or \cf7 mf2a6\cf1 \
+		Move a piece (forced move). \
+\cf7 -e2\cf1  or \cf7 -g7\cf1 \
+		Delete a piece from the board. \
+\cf7 +wqe4\cf1  or \cf7 +bpe5\cf1 \
+		Add a piece to the board. \
+\
+Note: Board editing can only be applied to the current game move. \
+To set the game to the currently displayed move, click the 
+\i Set Now
+\i0  ( \'95 ) button. \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 History
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 first\cf1 	   	Display first move. \
+\cf7 last\cf1 	   	Display last move. \
+\cf7 <\cf1  or \cf7 >\cf1 	Previous or Next move. \
+\cf7 now\cf1 	   	While in History, 
+\i now
+\i0  makes moveCount = current display.\
+\cf7 ? n\cf1 	   	Display history at ply n.\
+\
+Thus, if you want to Undo a move, you would enter the command: 
+\i <
+\i0  (and cmd-m)\
+for as many moves back you wanted to go, and then click the 
+\i Set Now
+\i0  ( \'95 ) button. \
+to set the game to continue from the current display. \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 Utility
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 ?c3
+\i B
+\i0 \cf1 		Show moves that target specified square. For example: 
+\i ?c3
+\i0  will show\
+		all moves of the current colour that can target square c3. Suffixing \
+		this with a piece type (e.g. 
+\i ?c3B
+\i0 ) will show all bishop moves of the \
+		current colour that can target square c3. \
+\cf7 perft N\cf1 	Runs perft diagnostic to tell how many moves. \
+		are possible at a given level of depth (e.g. perft 5). \
+\
+\cf7 cls\cf1 		Clears the screen. \
+\cf7 ascii\cf1 		Switches to old-school ASCII mode. \
+\cf7 say 
+\i text
+\i0 \cf1 	Speak the text you specify. \
+\cf7 version\cf1 	Displays the current version. \
+\cf7 help\cf1 		Displays this help. \
+\cf7 quit\cf1 		Quit pChess\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs28 \cf1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f3\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf1 \
+\
+}

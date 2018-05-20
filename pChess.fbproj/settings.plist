@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Architecture</key>
+	<integer>3</integer>
+	<key>CheckArrayBounds</key>
+	<false/>
+	<key>CodeOptimisation</key>
+	<integer>3</integer>
+	<key>CompileAndLink</key>
+	<true/>
+	<key>CompilerCode</key>
+	<integer>3</integer>
+	<key>CreateDSYMFile</key>
+	<false/>
+	<key>DebugLevel</key>
+	<integer>2</integer>
+	<key>Deployment</key>
+	<integer>3</integer>
+	<key>DeveloperCompilers</key>
+	<true/>
+	<key>DeveloperPath</key>
+	<string>/Developer</string>
+	<key>Features</key>
+	<integer>4</integer>
+	<key>LaunchAfterBuild</key>
+	<true/>
+	<key>MoreGCCOptions</key>
+	<string>-DHAS_POPCNT</string>
+	<key>MoreWarnings</key>
+	<false/>
+	<key>ObjCAndAppKit</key>
+	<false/>
+	<key>PrecompiledHeader</key>
+	<true/>
+	<key>SourceFileCombining</key>
+	<integer>0</integer>
+	<key>StopFirstErr</key>
+	<true/>
+	<key>StripUnusedCode</key>
+	<true/>
+	<key>SupportIdenticalVarNames</key>
+	<false/>
+	<key>WarnScopedVars</key>
+	<true/>
+	<key>WarnUntypedVars</key>
+	<true/>
+	<key>WarnUnusedFns</key>
+	<false/>
+</dict>
+</plist>

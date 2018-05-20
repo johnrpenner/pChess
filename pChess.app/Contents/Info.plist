@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>public.plain-text</string>
+			<key>CFBundleTypeOSTypes</key>
+			<string>TEXT</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>pChess</string>
+	<key>CFBundleIconFile</key>
+	<string>pChess.icns</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleGetInfoString</key>
+	<string>pChess 2.0 ©2012 John Roland Penner</string>
+	<key>CFBundleName</key>
+	<string>pChess</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>FB3a</string>
+	<key>CFBundleVersion</key>
+	<string>2.0</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,64 @@
+StartFontMetrics 2.0
+Comment  Copyright (c) 1989 Adobe Systems Incorporated. All rights reserved.
+Comment Creation Date:Tue Jun 6 16:10:25 PDT 1989
+FontName Cheq
+EncodingScheme FontSpecific
+FullName Cheq
+FamilyName Cheq
+Weight Medium
+ItalicAngle 0.0
+IsFixedPitch true
+UnderlinePosition -100
+UnderlineThickness 50
+Version 001.000
+Notice Copyright (c) 1989 Adobe Systems Incorporated.  All rights reserved.
+FontBBox -50 -150 1050 950
+StartCharMetrics 46
+C 32 ; WX 1000 ; N space ; B 0 0 0 0 ;
+C 45 ; WX 1000 ; N bottom ; B -50 850 1050 900 ;
+C 47 ; WX 1000 ; N left ; B 950 -150 1000 950 ;
+C 66 ; WX 1000 ; N BBishop ; B 92 0 909 817 ;
+C 68 ; WX 1000 ; N BQueen ; B 97 0 902 755 ;
+C 75 ; WX 1000 ; N BKing ; B 146 0 855 807 ;
+C 76 ; WX 1000 ; N BBishop ; B 92 0 909 817 ;
+C 78 ; WX 1000 ; N BKnight ; B 166 0 834 783 ;
+C 80 ; WX 1000 ; N BPawn ; B 253 0 748 575 ;
+C 81 ; WX 1000 ; N BQueen ; B 97 0 902 755 ;
+C 82 ; WX 1000 ; N BRook ; B 199 0 789 717 ;
+C 83 ; WX 1000 ; N BKnight ; B 166 0 834 783 ;
+C 84 ; WX 1000 ; N BRook ; B 199 0 789 717 ;
+C 92 ; WX 1000 ; N right ; B 0 -150 50 950 ;
+C 95 ; WX 1000 ; N top ; B -50 -100 1050 -50 ;
+C 98 ; WX 1000 ; N WBishop ; B 81 0 919 804 ;
+C 100 ; WX 1000 ; N WQueen ; B 103 0 897 736 ;
+C 107 ; WX 1000 ; N WKing ; B 129 0 872 813 ;
+C 108 ; WX 1000 ; N WBishop ; B 81 0 919 804 ;
+C 110 ; WX 1000 ; N WKnight ; B 159 0 841 785 ;
+C 112 ; WX 1000 ; N WPawn ; B 240 0 761 620 ;
+C 113 ; WX 1000 ; N WQueen ; B 103 0 897 736 ;
+C 114 ; WX 1000 ; N WRook ; B 204 0 796 717 ;
+C 115 ; WX 1000 ; N WKnight ; B 159 0 841 785 ;
+C 116 ; WX 1000 ; N WRook ; B 204 0 796 717 ;
+C 120 ; WX 1000 ; N BSquare ; B 0 -100 1000 900 ;
+C 160 ; WX 1000 ; N WRookOnBlack ; B 0 -100 1000 900 ;
+C 167 ; WX 1000 ; N WKnightOnBlack ; B 0 -100 1000 900 ;
+C 168 ; WX 1000 ; N WRookOnBlack ; B 0 -100 1000 900 ;
+C 181 ; WX 1000 ; N WKnightOnBlack ; B 0 -100 1000 900 ;
+C 182 ; WX 1000 ; N WQueenOnBlack ; B 0 -100 1002 900 ;
+C 184 ; WX 1000 ; N BPawnOnBlack ; B 0 -100 1000 900 ;
+C 185 ; WX 1000 ; N WPawnOnBlack ; B 0 -100 1000 900 ;
+C 186 ; WX 1000 ; N WBishopOnBlack ; B 0 -100 1000 900 ;
+C 194 ; WX 1000 ; N WBishopOnBlack ; B 0 -100 1000 900 ;
+C 206 ; WX 1000 ; N BQueenOnBlack ; B 0 -100 1000 900 ;
+C 207 ; WX 1000 ; N WQueenOnBlack ; B 0 -100 1002 900 ;
+C 229 ; WX 1000 ; N BRookOnBlack ; B 0 -100 1000 900 ;
+C 230 ; WX 1000 ; N BRookOnBlack ; B 0 -100 1000 900 ;
+C 234 ; WX 1000 ; N BKnightOnBlack ; B 0 -100 1000 900 ;
+C 235 ; WX 1000 ; N BQueenOnBlack ; B 0 -100 1000 900 ;
+C 240 ; WX 1000 ; N BKingOnBlack ; B 0 -100 1000 900 ;
+C 241 ; WX 1000 ; N BBishopOnBlack ; B 0 -100 1000 900 ;
+C 245 ; WX 1000 ; N BBishopOnBlack ; B 0 -100 1000 900 ;
+C 246 ; WX 1000 ; N BKnightOnBlack ; B 0 -100 1000 900 ;
+C 251 ; WX 1000 ; N WKingOnBlack ; B 0 -100 1000 900 ;
+EndCharMetrics
+EndFontMetrics

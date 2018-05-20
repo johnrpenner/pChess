@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WindowBounds</key>
+	<dict>
+		<key>Height</key>
+		<real>510</real>
+		<key>Width</key>
+		<real>248</real>
+		<key>X</key>
+		<real>1192</real>
+		<key>Y</key>
+		<real>100</real>
+	</dict>
+</dict>
+</plist>

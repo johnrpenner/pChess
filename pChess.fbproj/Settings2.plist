@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Analyze</key>
+	<integer>0</integer>
+	<key>BaseSDK</key>
+	<string>10.9</string>
+	<key>CheckArrayBounds</key>
+	<integer>0</integer>
+	<key>ClearLogEachTime</key>
+	<integer>1</integer>
+	<key>CompilerOptions</key>
+	<string>-DHAS_POPCNT</string>
+	<key>CompilerOptionsArray</key>
+	<array>
+		<string>-DHAS_POPCNT</string>
+	</array>
+	<key>DebugLevel</key>
+	<integer>2</integer>
+	<key>FontSize</key>
+	<integer>12</integer>
+	<key>HideLogWindowOnSuspend</key>
+	<integer>0</integer>
+	<key>LaunchAfterBuild</key>
+	<integer>1</integer>
+	<key>LogUNIXCommands</key>
+	<integer>0</integer>
+	<key>MinDeployment</key>
+	<string>10.6</string>
+	<key>Optimization</key>
+	<integer>3</integer>
+	<key>PathToDeveloperFolder</key>
+	<string>/Applications/Xcode.app/Contents/Developer</string>
+	<key>PathToDeveloperFolderArray</key>
+	<array>
+		<string>/Applications/Xcode.app/Contents/Developer</string>
+	</array>
+	<key>PutLineNumInfoInApp</key>
+	<integer>0</integer>
+	<key>ShowMoreWarnings</key>
+	<integer>0</integer>
+	<key>SourceFileCombining</key>
+	<string>Off</string>
+	<key>StopOnFirstError</key>
+	<integer>1</integer>
+	<key>StripUnusedCode</key>
+	<integer>1</integer>
+	<key>UsePrecompiledHeader</key>
+	<integer>1</integer>
+	<key>WarnOfScopedVars</key>
+	<integer>1</integer>
+	<key>WarnOfUntypedVars</key>
+	<integer>1</integer>
+	<key>WarnOfUnusedFunctions</key>
+	<integer>0</integer>
+</dict>
+</plist>
